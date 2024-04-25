@@ -1,0 +1,19 @@
+body {
+  background-color: #000;
+}
+
+#back1 {
+  text-align: center;
+  position: top, left;
+  font-family: Courier New, Courier, monospace;
+  font-size: 200px;
+  display: flex;
+}
+
+#back2 {
+  text-align: center;
+  position: top, left;
+  font-family: Courier New, Courier, monospace;
+  font-size: 200px;
+}
+/*# sourceMappingURL=index.9535f996.css.map */

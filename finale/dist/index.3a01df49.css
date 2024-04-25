@@ -1,0 +1,250 @@
+@font-face {
+  font-family: disket-regular;
+  src: url("Disket-Mono-Regular.e99d0269.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: disket-bold;
+  src: url("Disket-Mono-Bold.8f2b9d19.ttf") format("truetype");
+}
+
+body {
+  color: #fff;
+  background-color: #000;
+  font-family: disket-regular;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+#pcontainer {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+#ad {
+  justify-content: center;
+  animation: 2s ease-in opacity;
+  display: flex;
+}
+
+#p1 {
+  align-items: left;
+  padding: 10% 20% 0%;
+  font-size: 50pt;
+  animation: 2s ease-in opacity;
+  display: flex;
+}
+
+#p2 {
+  align-items: left;
+  padding: 0% 20%;
+  animation: 2s ease-in opacity;
+  display: flex;
+}
+
+.objcont {
+  justify-content: center;
+  align-items: center;
+  align-items: left;
+  flex-direction: column;
+  width: auto;
+  height: 100vh;
+  padding: 0% 20%;
+  display: flex;
+}
+
+#vid2 {
+  object-fit: cover;
+  z-index: -1;
+  width: 100vw;
+  min-width: 100%;
+  height: 100vh;
+  min-height: 100%;
+}
+
+#cont {
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  margin: 20%;
+  animation: .3s infinite blink2;
+  display: none;
+}
+
+#cont:hover {
+  color: #fff;
+  background: none;
+  border: 1px solid #fff;
+  animation: none;
+}
+
+.menu {
+  justify-content: space-between;
+  margin: 10pt;
+  font-size: 10pt;
+  display: flex;
+}
+
+#back1 {
+  text-align: center;
+  position: top, left;
+  width: 100%;
+  height: auto;
+  font-family: Courier New, Courier, monospace;
+  font-size: 200px;
+  display: flex;
+}
+
+#back2 {
+  text-align: center;
+  position: top, left;
+  width: 100%;
+  height: auto;
+  font-family: Courier New, Courier, monospace;
+  font-size: 200px;
+}
+
+#vid1 {
+  object-fit: cover;
+  z-index: -1;
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#btn1 {
+  text-transform: uppercase;
+  cursor: pointer;
+  z-index: 0;
+  background: #000;
+  justify-content: center;
+  margin: 10% auto;
+  font-size: 100pt;
+  animation: .3s linear infinite blink;
+  display: flex;
+}
+
+#back1, #back2 {
+  position: fixed;
+}
+
+button {
+  color: #fff;
+  background: none;
+  border: 5px solid #fff;
+  font-family: disket-regular;
+}
+
+button:hover {
+  color: #fff;
+  background: #ed6c6c;
+  border: 5px solid #ed6c6c;
+}
+
+.ptxt {
+  white-space: nowrap;
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+  flex-direction: column;
+  justify-content: center;
+  font-family: disket-regular;
+  font-size: 10pt;
+  display: flex;
+  overflow: hidden;
+}
+
+.container {
+  opacity: 0;
+  transition: opacity 2s ease-in;
+}
+
+.container.fade {
+  opacity: 1;
+  z-index: -1;
+}
+
+.fbtn, .vol {
+  border: 2px solid;
+}
+
+.fbtn:hover, .vol:hover {
+  color: #000;
+  border: 2px solid #ed6c6c;
+}
+
+#bottom {
+  animation: 3s steps(20, end) typing;
+  overflow: hidden;
+}
+
+@media (aspect-ratio >= 16 / 9) {
+  video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (aspect-ratio <= 16 / 9) {
+  video {
+    width: auto;
+    height: 100%;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 100%;
+  }
+
+  to {
+    width: 0;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+  }
+
+  100% {
+    color: #000;
+  }
+}
+
+@keyframes blink2 {
+  0% {
+  }
+
+  100% {
+    color: #000;
+    background-color: #fff;
+  }
+}
+
+@keyframes on {
+  0% {
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=index.3a01df49.css.map */
