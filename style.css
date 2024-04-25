@@ -1,11 +1,11 @@
 
 @font-face {
     font-family: "disket-regular";
-    src: url("../../fonts/Disket-Mono-Regular.ttf") format("truetype");
+    src: url("../../root/fonts/Disket-Mono-Regular.ttf") format("truetype");
       }
  @font-face {
         font-family: "disket-bold";
-        src: url("../../fonts/Disket-Mono-Bold.ttf") format("truetype");
+        src: url("../../root/fonts/Disket-Mono-Bold.ttf") format("truetype");
           }
 body {
     background-color: black;
